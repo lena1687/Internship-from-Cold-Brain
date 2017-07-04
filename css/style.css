@@ -1,0 +1,264 @@
+﻿/*
+Author: LenaS
+Description: Сайт о моем хобби-разработке
+*/
+
+html {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+}
+body {
+	padding: 0;
+	margin: 0;
+	min-width: 1200px;
+	font-family: 'Roboto', sans-serif;
+}
+.container {
+	width: 1200px;
+	min-width: 1200px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+/*header*/
+
+header {
+	color: #ffffff;
+}
+.top-header {
+	background-color: #04e4a2;
+}
+.top-header .container {
+	display: flex;
+	justify-content: space-between;
+}
+.telefon {
+	display: flex;
+	align-items: center;
+}
+.number-tel {
+	font-size: 16px;
+	padding-left: 15px;
+	vertical-align: middle;
+}
+.social {
+	display: flex;
+}
+.social>a {
+	width: 30px;
+	height: 30px;
+	background: url('../img/social.png') no-repeat;
+	margin: 5px 8px 5px 0;
+}
+.social>a:last-child {
+	margin-right: 0;
+}
+.social .vk {
+	background-position: left center;
+}
+.social .ok {
+	background-position: center;
+}
+.social .my-space {
+	background-position: right center;
+}
+.middle-header {
+	background-color: #e94643;
+}
+.middle-header .container {
+	display: flex;
+	justify-content: space-between;
+}
+.header-logo {
+	display: flex;
+}
+.header-logo img {
+	margin: 2px 0;
+}
+.header-menu {
+	display: flex;
+	align-items: center;
+}
+.header-menu>a {
+	text-decoration: none;
+	color: #ffffff;
+	text-transform: uppercase;
+	margin-right: 30px;
+	padding: 10px 0;
+}
+.header-menu>a:last-child {
+	margin-right: 0;
+}
+.header-menu>a:hover {
+	text-decoration: none;
+	color: #ffffff;
+	border-bottom: 2px solid #fdd835;
+}
+.bottom-header {
+	height: 580px;
+	background-color: #ef5350;
+}
+.strip {
+	width: 670px;
+	height: 790px;
+	position: absolute;
+	background: url('../img/bg.png') no-repeat -90px 74px;
+}
+.bottom-header .container {
+	display: flex;
+	justify-content: space-between;
+}
+.picture-left {
+	display: flex;
+	width: 390px;
+	height: 815px;
+	margin-top: 65px;
+	background: url('../img/border-tel.png') no-repeat;
+}
+.carousel.slide {
+	margin: 112px 30px 0;
+}
+.carousel-indicators {
+	margin-bottom: 5px;
+}
+.content-right {
+	display: flex;
+	flex-direction: column;
+}
+.content-right h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 100px;
+}
+.content-right p {
+	font-size: 18px;
+	margin: 30px 0 50px;
+}
+.button-header {
+	display: flex;
+	justify-content: flex-end;
+}
+.button-header button {
+	width: 170px;
+	height: 52px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #04e4a2;
+	border: none;
+	box-shadow: 0 0 2px 1px #76b09f;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+/*main*/
+
+.site-content .container {
+	display: flex;
+	justify-content: space-between;
+}
+.content-left {
+	display: flex;
+	width: 390px;
+}
+.feedback-form {
+	display: flex;
+	flex-direction: column;
+}
+.feedback-form h2 {
+	margin: 30px 0 25px;
+	font-size: 20px;
+	font-weight: 400;
+	color: #ffada7;
+}
+.form-fullname,
+.form-details {
+	display: flex;
+}
+.feedback-form input,
+.feedback-form select {
+	width: 300px;
+	height: 50px;
+	color: #636363;
+	font-size: 16px;
+	padding-left: 10px;
+	border: 1px solid #04e4a2;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+.feedback-form input:hover,
+.feedback-form select:hover,
+.feedback-form input:active,
+.feedback-form select:active,
+.feedback-form input:focus,
+.feedback-form select:focus {
+	border: 1px solid #17936e;
+}
+.feedback-form select {
+	/*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+	background: url('../img/arrow.png') no-repeat 260px center;
+}
+.form-name,
+.form-email {
+	margin-right: 25px;
+}
+textarea {
+	width: 625px;
+	color: #636363;
+	padding: 15px 0 0 10px;
+	border: 1px solid #04e4a2;
+	border-radius: 5px;
+}
+.form-button {
+	display: flex;
+	justify-content: flex-end;
+}
+.form-button button {
+	margin: 20px 0 45px;
+	width: 120px;
+	height: 52px;
+	color: #ffffff;
+	text-transform: uppercase;
+	background-color: #ef5350;
+	border: none;
+	border-radius: 5px;
+	box-shadow: 0 0 1px 1px #a62c2a;
+	cursor: pointer;
+}
+
+/*footer*/
+
+footer {
+	background-color: #fefcf2;
+}
+footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+.copyright {
+	display: flex;
+	width: 390px;
+}
+.footer-mail {
+	display: flex;
+	width: 625px;
+}
+.footer-mail span:before {
+	content: " ";
+	width: 38px;
+	height: 30px;
+	background: url("../img/mail.png");
+	display: inline-block;
+	background-size: cover;
+	margin-right: 12px;
+	margin-bottom: -9px;
+}
