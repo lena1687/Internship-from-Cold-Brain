@@ -1,14 +1,15 @@
 <!DOCTYPE HTML>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="keywords" content="Веб, блог, разработка">
-    <meta name="description" content="Сайт о моем хобби-разработке">
+    <meta name="keywords" content="Website, Blog, Development">
+    <meta name="description" content="Website, Blog, Development">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-    <title>Сквозь тернии к звездам</title>
+    <title>Through the thorns to the stars</title>
     <link href="css/style.css" type="text/css" rel="stylesheet">
     <link href="css/bootstrap-style.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="libs/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
 		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
@@ -18,8 +19,10 @@
 			<section class="top-header">
 				<div class="container">
 					<div class="telefon">
-						<img src="img/tel.png" alt="telefon" width="30px" height="30px">
-						<span class="number-tel">8908-11-11-111</span>
+						<img src="img/tel.png" alt="telefon" width="20px" height="20px">
+						<a class="number-tel" href="callto:89081111111">
+							8908-11-11-111
+						</a>
 					</div>
 					<div class="social">
 						<a href="https://vk.com/l.sedelnikova" target="blank" class="vk"></a><!--
@@ -28,19 +31,23 @@
 					</div>
 				</div>
 			</section>
-			<section class="middle-header">
+			<section class="bottom-header">
 				<div class="container">
 					<div class="header-logo">
-						<img src="img/logo.png" alt="telefon" width="75px" height="70px">
+						<a href="index.html">
+							<img src="img/logo.png" alt="telefon" width="75px" height="70px">
+						</a>
 					</div>
 					<nav class="header-menu">
-						<a href="#1" class="about">Обо мне</a><!--
-						--><a href="#2" class="portfolio">Портфолио</a><!--
-						--><a href="#3" class="contacts">Контакты</a>
+						<a href="about.html">About me</a><!--
+						--><a href="news.html">News</a><!--
+						--><a href="contacts.html">Contacts</a>
    				</nav>
 				</div>
 			</section>
-			<section class="bottom-header">
+		 </header>
+		 <main>
+			<section class="site-content">
 				<div class="strip"></div>
 				<div class="container">
 					<div class="picture-left">
@@ -72,63 +79,67 @@
 						</div>
 					</div>
 					<div class="content-right">
-						<h1>Учусь создавать красивые<br> и функциональные<br> веб- и мобильные<br> приложения.</h1>
-						<p>Вы можете создавать и создавать и создавать<br> самое замечательное место в мире. Но людям нужно<br> сделать мечту реальностью. - Уолт Дисней</p>
-						<div class="button-header">
-							<button type="submit">Узнать больше</button>
+						<h1>Push yourself & your designs</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						<div class="content-button">
+							<a href="#">Read more</a>
 						</div>
    				</div>
 				</div>
 			</section>
-    </header>
-    <main class="site-content">
-    	<div class="container">
-    		<div class="content-left"></div>
-	    	<form class="feedback-form" action="#" method="post">
-	    		<h2>Давайте общаться</h2>
-		      <div class="form-fullname">
-		      	<div class="form-name">
-							<input type="text" name="name" id="name-field" placeholder="Ваше имя">
+	    <section class="feedback">
+	    	<div class="container">
+	    		<div class="content-left"></div>
+		    	<form class="feedback-form" action="#" method="post">
+		    		<h2>Let's talk</h2>
+			      <div class="form-fullname">
+			      	<div class="form-name">
+								<input type="text" name="name" id="name-field" placeholder="Your name">
+							</div>
+							<div class="form-surname">
+								<input type="text" name="surname" id="surname-field" placeholder="Your surname">
+							</div>
 						</div>
-						<div class="form-surname">
-							<input type="text" name="surname" id="surname-field" placeholder="Ваша фамилия">
+						<div class="form-details">
+			      	<div class="form-email">
+								<input type="text" name="email" id="email-field" placeholder="Your email">
+							</div>
+							<div class="form-volume">
+								<select name="volume" id="volume-field">
+									<option disabled selected>Application Design</option>
+									<option value="Landing">Landing</option>
+									<option value="Medium difficulty">Medium difficulty</option>
+									<option value="Premium">Premium</option>
+								</select>
+							</div>
 						</div>
-					</div>
-					<div class="form-details">
-		      	<div class="form-email">
-							<input type="text" name="email" id="email-field" placeholder="Ваш email">
+						<div class="form-comment">
+							<textarea name="comment" id="comment-field" rows="5" placeholder="Describe your request here"></textarea>
 						</div>
-						<div class="form-volume">
-							<select name="volume" id="volume-field">
-								<option disabled selected>Дизайн приложения</option>
-								<option value="Лендинг">Лендинг</option>
-								<option value="Средней сложности">Средней сложности</option>
-								<option value="Премиум">Премиум</option>
-							</select>
+						<div class="form-button">
+							<button type="submit">Send</button>
 						</div>
-					</div>
-					<div class="form-comment">
-						<textarea name="comment" id="comment-field" rows="5" placeholder="Опишите Ваш запрос здесь"></textarea>
-					</div>
-					<div class="form-button">
-						<button type="submit">Отправить</button>
-					</div>
-				</form>
-			</div>
+					</form>
+				</div>
+	    </section>
     </main>
     <footer>
-    	<div  class="container">
+    	<div class="container">
 	    	<div class="copyright">
 					<p><span>&#169;</span>Lena<span>S</span></p>
 				</div>
 				<div class="footer-mail">
-					<span>lena1687@mail.ru</span>
+					<a href="mailto:lena1687@mail.ru" target="blank">
+						lena1687@mail.ru
+					</a>
 				</div>
 			</div>
     </footer>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/jquery.mosaicflow.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
   </body>
 </html>
