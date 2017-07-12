@@ -1,0 +1,345 @@
+﻿/*
+Author: LenaS
+Description: Website, Blog, Development
+*/
+* {
+	box-sizing: border-box;
+}
+html {
+	margin: 0;
+	padding: 0;
+	min-height: 100%;
+	font-size: 16px;
+}
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+/*header*/
+
+header {
+	color: #ffffff;
+}
+.top-header {
+	background-color: rgb(0, 241, 172);
+}
+.telefon {
+	line-height: 2.5;
+}
+.number-tel {
+	font-size: 1.14286rem;
+	text-decoration: none;
+	color: #292b2c;
+}
+.number-tel:hover,
+.number-tel:active,
+.number-tel:focus {
+	transform: scale(1.1);
+	text-decoration: none;
+	color: #17936e;
+}
+.social>a {
+	width: 33px;
+	height: 33px;
+	background: url('../img/social.png') no-repeat;
+	margin: 5px 0;
+}
+.social>a:last-child {
+	margin-right: 0;
+}
+.social .vk {
+	background-position: left center;
+}
+.social .ok {
+	background-position: center;
+}
+.social .my-space {
+	background-position: -65px center;
+}
+.bottom-header {
+	background-color: rgb(255, 214, 211);
+}
+.header-logo img {
+	margin: 2px 0;
+}
+.header-menu {
+	line-height: 3;
+}
+.header-menu>a {
+	font-size: 1.14286rem;
+	text-decoration: none;
+	color: #292b2c;
+	margin-right: 30px;
+	padding: 10px 0 0px;
+}
+.header-menu>a:last-child {
+	margin-right: 0;
+}
+.header-menu>a:hover {
+	transform: scale(1.1);
+	text-decoration: none;
+	color: #17936e;
+	border-bottom: 1px solid #17936e;
+}
+
+/*main*/
+
+.site-content {
+	background-color: rgba(49, 176, 213, 0.52);
+	min-height: 580px;
+}
+.strip {
+	width: 670px;
+	height: 790px;
+	position: absolute;
+	background: url('../img/bg.png') no-repeat -20px 74px;
+	z-index: -1;
+}
+.picture-left {
+	position: absolute;
+	height: 815px;
+	margin-top: 65px;
+	background: url('../img/border-tel.png') no-repeat;
+}
+.carousel.slide {
+	margin: 112px 30px 0;
+}
+.carousel-indicators {
+	margin-bottom: -25px;
+}
+.content-right h1 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	margin-top: 100px;
+}
+.content-right p {
+	font-size: 1.28571rem;
+	margin: 30px 0 50px;
+}
+.content-button {
+	margin-bottom: 20px;
+}
+.content-button a {
+	padding: 0 15px;
+	height: 52px;
+	color: #ffffff;
+	background-color: #04e4a2;
+	text-shadow: black 2px 1px 1px;
+	box-shadow: 0 0 2px 1px #76b09f;
+	line-height: 52px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+.content-button a:hover,
+.content-button a:active,
+.content-button a:focus {
+	transform: scale(1.1);
+	text-decoration: none;
+	color: #ffffff;
+}
+.feedback-form h2 {
+	margin: 30px 0 25px;
+	font-size: 1.42857rem;
+	font-weight: 400;
+	color: #ffada7;
+}
+.feedback-form input,
+.feedback-form select {
+	height: 50px;
+	width: 100%;
+	color: #636363;
+	font-size: 1.14286rem;
+	padding-left: 10px;
+	border: 1px solid #04e4a2;
+	border-radius: 5px;
+	margin-bottom: 25px;
+}
+.feedback-form input:hover,
+.feedback-form select:hover,
+.feedback-form input:active,
+.feedback-form select:active,
+.feedback-form input:focus,
+.feedback-form select:focus {
+	border: 1px solid #17936e;
+}
+.feedback-form select {
+	/*for WebKit*/
+ -webkit-appearance: none;
+ /* for FF */
+  -moz-appearance: none;
+  text-indent: 0.01px;
+  text-overflow: '';
+  /* for IE */
+  -ms-appearance: none;
+  appearance: none!important;
+	background: url('../img/arrow.png') no-repeat right center;
+}
+.form-name,
+.form-email {
+	margin-right: 25px;
+}
+.form-comment textarea {
+	color: #636363;
+	width: 100%;
+	padding: 15px 0 0 10px;
+	border: 1px solid #04e4a2;
+	border-radius: 5px;
+	font-size: 1.14286rem;
+}
+.form-checkbox {
+	margin-top: 5%;
+}
+.agreement {
+	margin-right: 15%;
+}
+.form-checkbox input {
+	margin: 0;
+}
+input[type="checkbox"] {
+  display: none;
+}
+input[type="checkbox"] + label {
+  cursor: pointer;
+  padding-left: 0;
+}
+input[type="checkbox"] + label::before {
+  content: "";
+  display: inline-block;
+  height: 32px;
+  width: 32px;
+  margin: 0 7px -10px 0;
+  background: url("../img/checkbox.png");
+  background-position: 28px 0px;
+  border: 1px solid #04e4a2;
+  border-radius: 5px;
+}
+input[type="checkbox"]:checked + label::before {
+  background-position: -1px 0px;
+}
+.form-button button {
+	margin: 20px 0 45px;
+	padding: 0 20px;
+	height: 52px;
+	color: #ffffff;
+	background-color: rgb(255, 214, 211);
+	border: none;
+	border-radius: 5px;
+	text-shadow: black 2px 1px 1px;
+	box-shadow: 0 0 1px 1px #76b09f;
+	cursor: pointer;
+}
+.form-button button:hover,
+.form-button button:active,
+.form-button button:focus {
+	transform: scale(1.1);
+	text-decoration: none;
+	color: #ffffff;
+}
+
+/*footer*/
+
+footer {
+	background-color: #fefcf2;
+	padding-top: 10px;
+	font-size: 1.14286rem;
+}
+.copyright {
+	line-height: 2;
+}
+.footer-mail {
+	margin-top: 3px;
+}
+.footer-mail:before {
+	content: " ";
+	width: 38px;
+	height: 30px;
+	background: url("../img/mail.png");
+	display: inline-block;
+	background-size: cover;
+	margin-right: 17px;
+	margin-bottom: -9px;
+}
+.footer-mail a {
+	text-decoration: none;
+	color: #292b2c;
+}
+.footer-mail a:hover,
+.footer-mail a:active,
+.footer-mail a:focus {
+	transform: scale(1.1);
+	text-decoration: none;
+	color: #17936e;
+}
+
+
+/*@media index.html, about.html*/
+@media screen and (max-width: 1199px) {
+	html {
+	font-size: 12px;
+	}
+	.telefon {
+    line-height: 3.5;
+  }
+  .site-content {
+  	min-height: 500px;
+  }
+  .picture-left {
+  	position: static;
+		background: url('../img/border-tel-2.png') no-repeat;
+		height: 400px;
+	}
+	.carousel.slide {
+		display: none;
+	}
+	.copyright {
+    line-height: 3;
+  }
+}
+@media screen and (max-width: 991px) {
+	html {
+		font-size: 12px;
+	}
+}
+@media screen and (max-width: 767px) {
+	html {
+		font-size: 11px;
+	}
+	 .site-content {
+  	min-height: 400px;
+  }
+	.picture-left {
+		background: url('../img/border-tel-3.png') no-repeat center;
+		margin-top: 0;
+	}
+	.strip {
+		display: none;
+	}
+	.content-right h1 {
+		margin-top: 30px;
+	}
+	.agreement {
+   	margin-right: 0;
+   	margin-bottom: 5%;
+	}
+	.negation {
+    margin-bottom: 5%;
+	}
+}
+@media screen and (max-width: 575px) {
+	html {
+		font-size: 10px;
+	}
+	.picture-left {
+		height: 300px;
+	}
+	.content-right h1 {
+    margin-top: 15px;
+	}
+	.content-right p {
+    margin: 10px 0 20px;
+    padding: 0 10px;
+	}
+	.feedback-form {
+		padding: 0 10px;
+	}
+}
