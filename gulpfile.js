@@ -19,7 +19,7 @@ gulp.task('less', function () {
                 'Safari >= 8'
             ],
             cascade: false
-        }).on('error', console.log))
+        }).on('error', (e) => { this.emit('end'); console.log(e); })
         .pipe(plugins.minifyCss())
         .pipe(plugins.rename({suffix: '.min'}))
         .pipe(gulp.dest('./css'));
