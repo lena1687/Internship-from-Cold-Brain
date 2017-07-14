@@ -56,6 +56,7 @@ header {
 }
 .bottom-header {
   background-color: rgb(255, 214, 211);
+  width: 100%;
 }
 .header-logo img {
   margin: 2px 0;
@@ -63,24 +64,46 @@ header {
 .header-menu {
   line-height: 3;
 }
-.header-menu>a {
+.header-menu li {
+  width: 90px;
+  margin-right: 20px;
+}
+.header-menu li>a {
   font-size: 1.14286rem;
   text-decoration: none;
   color: #292b2c;
   margin-right: 30px;
   padding: 10px 0 0px;
 }
-.header-menu>a:last-child {
+.header-menu li>a:last-child {
   margin-right: 0;
 }
-.header-menu>a:hover {
+.header-menu li>a:hover {
   transform: scale(1.1);
   text-decoration: none;
   color: #17936e;
   border-bottom: 1px solid #17936e;
 }
+.bottom-header .navbar-toggler {
+  font-size: 1.5rem;
+  border: 1px solid #292b2c;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: rgba(78, 249, 170, 0.68);
+}
+.bottom-header .navbar-toggler:hover,
+.bottom-header .navbar-toggler:active,
+.bottom-header .navbar-toggler:focus {
+  box-sizing: content-box;
+  outline: none;
+}
+.header-menu li:hover,
+.header-menu li:active,
+.header-menu li:focus {
+  margin-right: 0;
+}
 
-/*main*/
+  /*main*/
 
 .site-content {
   background-color: rgba(49, 176, 213, 0.52);
@@ -271,6 +294,14 @@ footer {
 
 
 /*@media index.html, about.html*/
+@media screen and (min-width: 1200px) {
+  .header-menu {
+    width: 487px;
+    position: absolute;
+    left: 95%;
+    transform: translatex(-95%);
+  }
+}
 @media screen and (max-width: 1199px) {
   html {
     font-size: 12px;
@@ -278,6 +309,10 @@ footer {
   .telefon {
     line-height: 3.5;
   }
+  .header-menu {
+     left: 90%;
+     transform: translatex(-90%);
+   }
   .site-content {
     min-height: 500px;
   }
@@ -297,10 +332,21 @@ footer {
   html {
     font-size: 12px;
   }
+  .header-menu {
+    left: 80%;
+    transform: translatex(-80%);
+  }
+  .header-menu li {
+    width: 70px;
+  }
 }
 @media screen and (max-width: 767px) {
   html {
     font-size: 11px;
+  }
+  .header-menu {
+    left: 60%;
+    transform: translatex(-60%);
   }
   .site-content {
     min-height: 400px;
@@ -326,6 +372,13 @@ footer {
 @media screen and (max-width: 575px) {
   html {
     font-size: 10px;
+  }
+  .navbar.header-menu {
+    padding-left: 10px;
+  }
+  .header-menu li {
+    margin-right: 0;
+    text-align: center;
   }
   .picture-left {
     height: 300px;
