@@ -10,7 +10,7 @@ gulp.task('less', function () {
     return gulp.src('./less/**/*.less')
         .pipe(plugins.less({
             paths: [ path.join(__dirname, 'less', 'includes') ]
-        }).on('error', console.log))
+        }).on('error', function(e) { this.emit('end'); console.log(e); }))
         .pipe(plugins.concat('style.css'))
         .pipe(plugins.autoprefixer({
             browsers: [
@@ -19,7 +19,7 @@ gulp.task('less', function () {
                 'Safari >= 8'
             ],
             cascade: false
-        }).on('error', (e) => { this.emit('end'); console.log(e); })
+        }).on('error', function(e) { this.emit('end'); console.log(e); }))
         .pipe(plugins.minifyCss())
         .pipe(plugins.rename({suffix: '.min'}))
         .pipe(gulp.dest('./css'));
