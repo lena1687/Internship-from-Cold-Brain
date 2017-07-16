@@ -1,0 +1,58 @@
+@import "library";
+
+.contacts-page {
+  background-color: @color-light-blue;
+  padding: 55px 0;
+    .accordione {
+        label {
+          padding: 5px 20px;
+          position: relative;
+          z-index: 20;
+          height: 55px;
+          cursor: pointer;
+          color: @color-gray;
+          line-height: 33px;
+          font-size: 1.4rem;
+          border: 1px solid @color-hover-grin;
+          &:hover {
+            background: #fff;
+          }
+        }
+        input:checked + label,
+        input:checked + label:hover{
+          background: #c6e1ec;
+          color: #3d7489;
+        }
+        input[type=checkbox]+label::after {
+          content: "";
+          display: inline-block;
+          height: 32px;
+          width: 32px;
+          background: url(../img/arrow-2.png) no-repeat;
+          float: right;
+        }
+        input[type=checkbox]:checked+label::after {
+          transform: rotate(180deg);
+        }
+        input:checked ~ article {
+          height: 100%;
+        }
+        article {
+          background: rgba(91, 192, 222, 0.7);
+          overflow: hidden;
+          height: 0px;
+          position: relative;
+          z-index: 2;
+          transition: height 0.3s ease;
+            p {
+              color: @color-gray;
+              line-height: 23px;
+              font-size: 1.4rem;
+              padding: 20px;
+            }
+        }
+    }
+    @media screen and (max-width: 767px) {
+      padding: 15px 0;
+    }
+}

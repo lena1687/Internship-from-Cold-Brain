@@ -1,25 +1,18 @@
-$(document).ready(function() {
-	$("a.fancybox").fancybox();
-	$("[data-fancybox]").fancybox({    // Options for fancybox
-	});
+"use strict";
 
-    $(".sub > a").click(function() {          // Options for news-menu
-        var ul = $(this).next(),
-            clone = ul.clone().css({"height":"auto"}).appendTo(".mini-menu"),
-            height = ul.css("height") === "0px" ? ul[0].scrollHeight + "px" : "0px";
-        clone.remove();
-        ul.animate({"height":height});
-        return false;
-    });
-    $('.mini-menu > ul > li > a').click(function(){
-        $('.sub a').removeClass('active');
-        $(this).addClass('active');
-    }),
-        $('.sub ul li a').click(function(){
-            $('.sub ul li a').removeClass('active');
-            $(this).addClass('active');
-        });
+$(document).ready(function() {   //готов, когда построен DOM
+	$('a.fancybox').fancybox();    // fancybox loading
 
+    // Options for news-menu
+    $('.sub > a').click(clickProcessor);
 
 });
 
+function clickProcessor() {
+
+    var a = $(this);
+    var ul = a.next('ul');        //след за .sub а - ul
+    ul.slideToggle();       //раздвигает и сдвигает меню
+    a.toggleClass('active');  //доб и удал класс
+    return false;            //препятст дальнейшей обраб события браузером
+}

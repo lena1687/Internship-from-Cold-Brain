@@ -1,0 +1,191 @@
+@import "library";
+
+.site-content {
+  background-color: @color-light-blue;
+  min-height: 580px;
+    .strip {
+      .strip;
+      @media screen and (max-width: 767px) {
+        display: none;
+      }
+  }
+  @media screen and (max-width: 1199px) {
+    min-height: 500px;
+  }
+  @media screen and (max-width: 767px) {
+    min-height: 400px;
+  }
+  .picture-left {
+    position: absolute;
+    height: 815px;
+    margin-top: 65px;
+    background: url('../img/border-tel.png') no-repeat;
+    .carousel.slide {
+      margin: 112px 30px 0;
+      & .carousel-indicators {
+        margin-bottom: -25px;
+      }
+      @media screen and (max-width: 1199px) {
+        display: none;
+      }
+    }
+    @media screen and (max-width: 1199px) {
+        position: static;
+        background: url('../img/border-tel-2.png') no-repeat;
+        height: 400px;
+    }
+    @media screen and (max-width: 767px) {
+      background: url('../img/border-tel-3.png') no-repeat center;
+      margin-top: 0;
+    }
+    @media screen and (max-width: 575px) {
+      height: 300px;
+    }
+  }
+  .content-right {
+    h1 {
+      font-family: @font-monserrat;
+      font-weight: bold;
+      margin-top: 100px;
+        @media screen and (max-width: 767px) {
+          margin-top: 30px;
+        }
+      @media screen and (max-width: 575px) {
+          margin-top: 15px;
+      }
+    }
+    p {
+      font-size: 1.28571rem;
+      margin: 30px 0 50px;
+        @media screen and (max-width: 575px) {
+            margin: 10px 0 20px;
+            padding: 0 10px;
+        }
+    }
+    .content-button {
+      margin-bottom: 20px;
+      a {
+        padding: 0 15px;
+        height: 52px;
+        color: @color-white;
+        background-color: @color-light-grin;
+        text-shadow: @color-black 2px 1px 1px;
+        box-shadow: 0 0 2px 1px @color-hover-grin;
+        line-height: 52px;
+        border-radius: 5px;
+        cursor: pointer;
+        &:hover,
+        &:active,
+        &:focus {
+          transform: scale(1.1);
+          text-decoration: none;
+          color: @color-white;
+        }
+      }
+    }
+  }
+}
+.feedback-form {
+  h2 {
+    margin: 30px 0 25px;
+    font-size: 1.42857rem;
+    font-weight: 400;
+    color: @color-light-pink;
+    text-shadow: @color-gray 2px 1px 1px;
+  }
+  input,
+  select {
+    height: 50px;
+    width: 100%;
+    color: @color-gray;
+    font-size: 1.14286rem;
+    padding-left: 10px;
+    border: 1px solid @color-light-grin;
+    border-radius: 5px;
+    margin-bottom: 25px;
+      &:hover,
+      &:active,
+      &:focus {
+        border: 1px solid @color-hover-grin;
+      }
+  }
+  select {
+    text-indent: 0.01px;
+    text-overflow: '';
+    appearance: none !important;
+    background: url('../img/arrow.png') no-repeat right center;
+  }
+  .form-name,
+  .form-email {
+    margin-right: 25px;
+  }
+  .form-comment textarea {
+    color: @color-gray;
+    width: 100%;
+    padding: 15px 0 0 10px;
+    border: 1px solid @color-light-grin;
+    border-radius: 5px;
+    font-size: 1.14286rem;
+  }
+  .form-checkbox {
+    margin-top: 5%;
+      .agreement {
+        margin-right: 15%;
+          @media screen and (max-width: 767px) {
+            margin-right: 0;
+            margin-bottom: 5%;
+          }
+      }
+      .negation {
+        @media screen and (max-width: 767px) {
+          margin-bottom: 5%;
+        }
+      }
+      input {
+        margin: 0;
+          &[type="checkbox"] {
+            display: none;
+              &:checked + label::before {
+                background-position: -1px 0px;
+              }
+              & + label {
+                cursor: pointer;
+                padding-left: 0;
+                &::before {
+                    content: "";
+                    display: inline-block;
+                    height: 32px;
+                    width: 32px;
+                    margin: 0 7px -10px 0;
+                    background: url("../img/checkbox.png");
+                    background-position: 28px 0px;
+                    border: 1px solid @color-light-grin;
+                    border-radius: 5px;
+                }
+              }
+          }
+      }
+  }
+  .form-button button {
+    margin: 20px 0 45px;
+    padding: 0 20px;
+    height: 52px;
+    color: @color-white;
+    background-color: @color-light-pink;
+    border: none;
+    border-radius: 5px;
+    text-shadow: @color-gray 2px 1px 1px;
+    box-shadow: 0 0 1px 1px @color-hover-grin;
+    cursor: pointer;
+        &:hover,
+        &:active,
+        &:focus {
+          transform: scale(1.1);
+          text-decoration: none;
+          color: #ffffff;
+        }
+  }
+  @media screen and (max-width: 575px) {
+    padding: 0 10px;
+  }
+}
