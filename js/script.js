@@ -6,6 +6,32 @@ $(document).ready(function() {   //готов, когда построен DOM
     // Options for news-menu
     $('.sub > a').click(clickProcessor);
 
+    $('#carouselOne').owlCarousel({
+        items : 1,//Кол-во отображаемых элементов в слайдере
+        singleItem : false,
+        itemsScaleUp : false,
+        loop : true, //Зацикливаем слайдер
+        margin : 0, //Отступ от элемента справа в 50px
+        nav : true, //вкл навигацию
+        autoplay : true, //Автозапуск слайдера
+        autoplayHoverPause : false, //Пауза при наведении курсора мыши.
+        dots : true,//Отображение навигационных «точек»
+        smartSpeed: 1000, //Время движения слайда
+        autoplayTimeout: 2000, //Время смены слайда
+        responsiveClass:true,
+        responsive :{ //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+            0:{
+                items:1
+            },
+            768:{
+                items:2
+            },
+            980:{
+                items:3
+            }
+        }
+    });
+
 });
 
 function clickProcessor() {
